@@ -1,5 +1,5 @@
 
-package co.edu.ucundinamarca.tallern;
+package co.edu.ucundinamarca.taller_2;
 
 
 
@@ -11,7 +11,7 @@ import org.junit.Test;
  *
  * @author hortizr
  */
-public class MainTest {
+public class MainpersonaTest {
 
     @Test
     public void testSuma() {
