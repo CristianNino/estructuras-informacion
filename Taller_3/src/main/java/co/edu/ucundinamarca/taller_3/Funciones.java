@@ -8,7 +8,7 @@ import java.util.*;
 import org.apache.log4j.Logger;
 
 public class Funciones {
-    static Logger log = Logger.getLogger(Main.class.getName());
+    static Logger log = Logger.getLogger(Funciones.class.getName());
     static Scanner a = new Scanner(System.in);
     
     int numero;
@@ -29,14 +29,7 @@ public class Funciones {
            
        }
     }
-    public void potencia(int  base,  int  exponente){
-        
-           /*log.info("digite la base de la potencia");
-           base = a.nextInt();
-           
-           log.info("digite el exponente de la potencia");
-           exponente = a.nextInt();*/
-           
+    public void potencia(int  base,  int  exponente){           
            log.info("es valor establecido es: "+ base +" elevado a la "+ exponente);
            log.info("Su resultado es: " + Math.pow(base, exponente));
            

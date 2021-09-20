@@ -5,7 +5,7 @@ import java.util.*;
 import org.apache.log4j.Logger;
 
 public class MainPruebasFunciones {
-    static Logger log = Logger.getLogger(Main.class.getName());
+    static Logger log = Logger.getLogger(MainPruebasFunciones.class.getName());
     static Scanner a = new Scanner(System.in);
     
     public static void main(String[] args) {
