@@ -44,9 +44,11 @@ public class PrincipalPunto2 {
                   log.info("Ingrese un dato a modificar");
                   int dato4 = a.nextInt();
                   lista1.Modificar(dato4);
+                  break;
               case 5:
                   log.info("5. salir");
                   log.info("Proceso funalizado");
+                  break;
           }
       }while(opcion != 5);
       
