@@ -29,18 +29,18 @@ public class Punto_3 {
         MostrarElementosArrayList(listas);
         
         log.info("-- Inicia el juego -- ");
-        
-         elem = (int)(Math.random() * Dat.length);
-        EliminarElementoArrayList(listas, elem);
-    
-        log.info("los soldados restantes son: ");
-        MostrarElementosArrayList(listas);   
-        
-        elem = (int)(Math.random() * (Dat.length - 1));
+               
+        for(int x = 1; x < Dat.length; x = x + 1){
+            log.info(" " + x + " soldado(s) eliminado(s)");
+            elem = (int)(Math.random() * (Dat.length - x));;
         EliminarElementoArrayList(listas, elem);
     
         log.info("los soldados restantes son: ");
         MostrarElementosArrayList(listas); 
+        }
+        
+        log.info("el soldado que se salva y va por ayuda es: ");
+      MostrarElementosArrayList(listas);
         
 }
     public static void AlmacenarElementosArrayList(String Array[],ArrayList list,Scanner sc){
