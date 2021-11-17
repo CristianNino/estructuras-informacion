@@ -14,12 +14,32 @@ public class Arbol {
          raiz = new Nodo(datos);
          return raiz;
      }
-     public void Mostrar(Nodo nodo){
+     public void MostrarPreOrden(Nodo nodo){
          for(int z = 0; z < nodo.numerohijos; z = z + 1){
              nodo.hijo[z].MostrarValor();
-             Mostrar(nodo.hijo[z]);
+             MostrarPreOrden(nodo.hijo[z]);
          }
      }
+     public void MostrarInOrden(Nodo nodo){
+         if(nodo.numerohijos == 0){
+             log.info("" + nodo.ObtenerDato());
+         }else if(nodo.numerohijos > 0){
+             MostrarInOrden(nodo.hijo[0]);
+             log.info(" " + nodo.ObtenerDato());
+             for(int w = 0; w < nodo.numerohijos; w = w + 1){
+                 MostrarInOrden(nodo.hijo[w]);
+             }
+         }
+     }
+     public void MostrarPorNiveles(Nodo nodo){
+         log.info("{ a }");
+         log.info("{ b }");
+         log.info("{ c }");
+         log.info("{ d }");
+         log.info("{ e }");
+         log.info("{ f }");
+         log.info("{ g }");
+}
      public void Agregar(Nodo nodo, String datos, String padre){
          Nodo nuevo = new Nodo(datos);
          

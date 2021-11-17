@@ -12,6 +12,25 @@ public class MainArbol {
         Arbol arbol = new Arbol();
         
         Nodo nodo = arbol.AgregarRaiz("a");
+        arbol.raiz.MostrarValor();
         
+        arbol.Agregar(nodo,"b","a");
+        arbol.Agregar(nodo,"c","a");
+        arbol.Agregar(nodo,"d","a");
+        
+        arbol.Agregar(nodo,"e","c");
+        arbol.Agregar(nodo,"f","c");
+        
+        arbol.Agregar(nodo,"g","f");
+        
+        log.info("Musestra los valores en recorrido PreOrden");
+        arbol.MostrarPreOrden(nodo);
+        log.info(" ");
+        log.info("Musestra los valores en recorrido InOrden");
+        arbol.MostrarInOrden(nodo);
+        log.info(" ");
+        log.info("Musestra los valores en recorrido PorNiveles");
+        arbol.MostrarPorNiveles(nodo);
+        log.info(" ");
     }
 }

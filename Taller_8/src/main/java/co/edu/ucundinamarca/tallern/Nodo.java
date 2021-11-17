@@ -13,7 +13,7 @@ public class Nodo {
         this.numerohijos = 0;
     }
     public void TenerHijos(){
-        hijoT = new Nodo[numerohijos - 1];
+        hijoT = new Nodo[numerohijos + 1];
         for(int x = 0; x < this.numerohijos; x = x + 1){
             hijoT[x] = hijo[x];
         }
@@ -31,6 +31,6 @@ public class Nodo {
         dato = datos;
     }
     public void MostrarValor(){
-        log.info("{ "+dato+" ]");
+        log.info("{ "+dato+" }");
     }
 }
